@@ -2,9 +2,8 @@ import EventsList from "@/components/events-list";
 import H1 from "@/components/h1";
 import { Suspense } from "react";
 import Loading from "./loading";
-import { capitalize } from "@/lib/util";
+import { capitalize } from "@/lib/utils";
 import { Metadata } from "next";
-import { useSearchParams } from "next/navigation";
 import { z } from "zod";
 
 type Props = {

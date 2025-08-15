@@ -1,22 +1,8 @@
-import clsx, { ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
-import prisma from "./db";
-import { notFound } from "next/navigation";
+import "server-only";
 import { unstable_cache } from "next/cache";
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-
-export function capitalize(string: string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-export async function sleep(ms: number) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-}
+import { notFound } from "next/navigation";
+import prisma from "./db";
+import { capitalize } from "./utils";
 
 export const getEvents = unstable_cache(async (city: string, page = 1) => {
   const events = await prisma.eventoEvent.findMany({
