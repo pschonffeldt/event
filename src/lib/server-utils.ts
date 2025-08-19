@@ -7,7 +7,7 @@ import { capitalize } from "./utils";
 export const getEvents = unstable_cache(async (city: string, page = 1) => {
   const events = await prisma.eventoEvent.findMany({
     where: {
-      city: city === "all" ? undefined : capitalize(city),
+      city: city === "todas" ? undefined : capitalize(city),
     },
     orderBy: {
       date: "asc",
@@ -17,7 +17,7 @@ export const getEvents = unstable_cache(async (city: string, page = 1) => {
   });
 
   let totalCount;
-  if (city === "all") {
+  if (city === "todas") {
     totalCount = await prisma.eventoEvent.count();
   } else {
     totalCount = await prisma.eventoEvent.count({

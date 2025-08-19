@@ -3,11 +3,11 @@ import Link from "next/link";
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "Inicio",
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/proyecto",
+    name: "Sobre el proyecto",
   },
 ];
 
@@ -15,7 +15,8 @@ export default function Footer() {
   return (
     <footer className="mt-auto flex items-center justify-between h-16 border-t border-white/10 px-3 sm:px-9 text-xs text-white/25">
       <small className="text-xs">
-        &copy; 2050 pschonffeldt. All rights reserved
+        &copy; 2050 <a href="https://pschonffeldt.dev/">pschonffeldt</a>. Todos
+        los derechos reservados
       </small>
 
       <ul className="flex gap-x-3 sm:gap-x-8">

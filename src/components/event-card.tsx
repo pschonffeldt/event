@@ -47,7 +47,7 @@ export default function EventCard({ event }: EventCardProps) {
         />
         <div className="flex flex-col flex-1 justify-center items-center">
           <h2 className="text-2xl font-semibold">{event.name}</h2>
-          <p className="italic text-white/75">By {event.organizerName}</p>
+          <p className="italic text-white/75">Por {event.organizerName}</p>
           <p className="text-sm text-white/50 mt-4">{event.location}</p>
         </div>
         <section className="absolute flex flex-col justify-center items-center left-[12px] top-[12px] h-[45px] w-[45px] bg-black/30 rounded-md">

@@ -8,12 +8,12 @@ import { cn } from "@/lib/utils";
 
 const routes = [
   {
-    name: "Home",
+    name: "Inicio",
     path: "/",
   },
   {
-    name: "All Events",
-    path: "/events/all",
+    name: "Todas las cocheras",
+    path: "/cocheras/todas",
   },
 ];
 

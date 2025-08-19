@@ -18,7 +18,7 @@ export default function PaginationControls({
       {previousPath ? (
         <Link href={previousPath} className={btnStyles}>
           <ArrowLeftIcon />
-          Previous
+          Anterior
         </Link>
       ) : (
         <div />
@@ -26,7 +26,7 @@ export default function PaginationControls({
 
       {nextPath && (
         <Link href={nextPath} className={btnStyles}>
-          Next
+          Siguiente
           <ArrowRightIcon />
         </Link>
       )}

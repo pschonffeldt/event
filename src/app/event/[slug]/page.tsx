@@ -65,7 +65,8 @@ export default async function EventPage({ params }: Props) {
           />
           <div className="flex flex-col">
             <p className="text-white/75">
-              {new Date(event.date).toLocaleDateString("en-US", {
+              Fecha de publicación{" "}
+              {new Date(event.date).toLocaleDateString("es-US", {
                 weekday: "long",
                 month: "long",
                 day: "numeric",
@@ -75,11 +76,12 @@ export default async function EventPage({ params }: Props) {
               {event.name}
             </H1>
             <p className="whitespace-nowrap text-xl text-white/75">
-              Organized by <span className="italic">{event.organizerName}</span>
+              Publicado por{" "}
+              <span className="italic">{event.organizerName}</span>
             </p>
 
             <button className="bg-white/20 text-lg capitalize bg-blur mt-5 lg:mt-auto w-[95vw] rounded-md border-white/10 border-2 sm:w-full py-2 state-effects">
-              Get tickets
+              Contactar dueño
             </button>
           </div>
         </div>
@@ -87,12 +89,12 @@ export default async function EventPage({ params }: Props) {
 
       <div className="min-h-[75vh] text-center px-5 py-16">
         <Section>
-          <SectionHeading>About this event</SectionHeading>
+          <SectionHeading>Detalles de cochera</SectionHeading>
           <SectionContent>{event.description}</SectionContent>
         </Section>
 
         <Section>
-          <SectionHeading>Location</SectionHeading>
+          <SectionHeading>Ubicación</SectionHeading>
           <SectionContent>{event.location}</SectionContent>
         </Section>
       </div>

@@ -8,8 +8,8 @@ import Container from "@/components/container";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Evento - Find events around you",
-  description: "Browse more than 10k events worldwide",
+  title: "Cocherazo - Encuentra cocheras cerca de ti",
+  description: "Encuentra cocheras cerca de ti",
   creator: "pschonffeldt",
 };
 
